@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sine{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("./main-background.jpg");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.sine .box{
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.sine .buttons{
+    box-shadow: 0 0 5px 1px rgb(0, 0, 0);
+    width: 70%;
+    margin: 30px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+.sine .button{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: 0;
+    border-radius: 20px;
+    width: 50%;
+    position: relative;
+}
+.sine #but-color{
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background: linear-gradient(to right, orange,red, yellow);
+    height: 100%;
+    width: 50%;
+    transition: .5s;
+}
+.sine .form-group{
+    position: absolute;
+    top: 100px;
+    width: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: .5s;
+}
+.sine .input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid #999;
+    background: transparent;
+}
+.sine .submit-btn{
+    width: 70%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, orange,red, yellow);
+    border: none;
+    border-radius: 20px;
+}
+.sine .check-box{
+    margin: 30px 10px 30px 0;
+}
+.sine #span-remind{
+    color: #777;
+    padding-bottom: 10px;
+}
+.sine #login{
+   left: 50%;
+}
+.sine #singup{
+   left: -50%;
+}

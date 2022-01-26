@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sine">
+        <div class="box">
+            <div class="buttons">
+                <div id="but-color"></div>
+                <button type="button" class="button" onclick="login()">Log In</button>
+                <button type="button" class="button" onclick="signUp()">Sign Up</button>
+            </div>
+            <form action="index.html" id="login" class="form-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter a Password" required>
+                <input type="checkbox" class="check-box"><span id="span-remind">Remind Password</span>
+                <button type="submit" class="submit-btn">LogIn</button>
+
+            </form>
+
+            <form action="index.html" id="singup" class="form-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email-Id" required>
+                <input type="password" class="input-field" placeholder="Enter a Password" required>
+                <input type="checkbox" class="check-box"><span id="span-remind">I Agree</span>
+                <button type="submit" class="submit-btn">Sign Up</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            document.getElementById('but-color').style.left = "0%";
+            document.getElementById('login').style.left = "50%";
+            document.getElementById('singup').style.left = "-50%";
+        }
+        function signUp() {
+            document.getElementById('but-color').style.left = "50%";
+            document.getElementById('singup').style.left = "50%";
+            document.getElementById('login').style.left = "-50%";
+        }
+    </script>
+</body>
+
+</html>
